@@ -5,6 +5,7 @@ import { Location }               from '@angular/common';
 
 import { Hero }         from './hero';
 import { HeroService }  from './hero.service';
+
 @Component({
   selector: 'hero-detail',
   templateUrl: './hero-detail.component.html',
@@ -12,8 +13,8 @@ import { HeroService }  from './hero.service';
 })
 export class HeroDetailComponent implements OnInit {
   hero: Hero;
-
-  constructor(
+  
+constructor(
     private heroService: HeroService,
     private route: ActivatedRoute,
     private location: Location
